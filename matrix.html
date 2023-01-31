@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NoPixel - New Minigame</title>
+    <meta name="description" content="Play the NoPixel Thermite Minigame to test your memory.">
+    <link rel="canonical" href="https://sharkiller.ddns.net/nopixel_minigame/thermite/" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="matrix.css?v=20211221">
+    <script defer src="matrix.js?v=20211221"></script>
+    <script> // Microsoft Bing
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/9twm8m8r4i?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "9twm8m8r4i");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52394643-1"></script>
+    <script> // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-52394643-1');
+    </script>
+</head>
+<body>
+    <h1 class="title">NoPixel - New Minigame</h1>
+   
+    <div class="streaks">
+        STREAK: <span class="streak">0</span> <span class="fa">&#xf21b;</span> MAX STREAK: <span class="max_streak">0</span>
+        <br>TIME: <span class="time">0.000</span> <span class="fa">&#xf2f2;</span> BEST TIME: <span class="best_time">0.000</span>
+    </div>
+    <div class="options">
+        <div class="option speed">
+            <label for="speed">Speed:</label>
+            <input id="speed" type="range" value="30" min="30" max="100" autocomplete="off">
+            <div class="speed_value">30s</div>
+        </div>
+        <div class="option grid">
+            <!-- <label for="grid">Grid:</label> -->
+            <input id="grid" value="4" >
+            <div class="grid_value"></div>
+        </div>
+    </div>
+    
+    <div class="minigame">
+        <div class="splash"><div style="font-size:44px; padding: 10px;" class="fa fa-database">&#xf1c0;</div>Data corrupted, checksum repair required...</div>
+        <div class="groups hidden"></div>
+    </div>
+    <div class="restart"><button class="btn_again">AGAIN!</button></div>
+   
+</body>
+</html>
