@@ -99,16 +99,19 @@ function check(){
 
     if (randomcheck === false) {
         // The higher value, the more difficult.
-        var difficult = 3;
+        var difficult = 4;
         for (var i = 0; i < difficult; i++) {
             let 
                 a = Math.floor(Math.random() * 4),
                 b = Math.floor(Math.random() * 3 + 5),
-                c = Math.floor(Math.random() * 6 + 9);
-            
-            if (i === 0) index = a;
-            else if (i === 1) index = b;
-            else index = c;
+                c = Math.floor(Math.random() * 6 + 9),
+                d = Math.floor(Math.random() * 4);
+               
+            if (d == a) d++;
+            if (i == 0) index = a;
+            else if (i == 1) index = b;
+            else if (i == 2) index = c;
+            else index = d;
             
             if (parseInt(index) === 0 || parseInt(index) === 4 || parseInt(index) === 8 || parseInt(index) === 12) {
                 if (parseInt(index) + 1 > -1 && parseInt(index) + 1 < 16) {if (itemList[parseInt(index) + 1].classList.value === "group good") itemList[parseInt(index) + 1].classList.remove('good'); else itemList[parseInt(index) + 1].classList.add('good')}
