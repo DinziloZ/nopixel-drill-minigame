@@ -107,7 +107,7 @@ function check(){
                 c = Math.floor(Math.random() * 6 + 9);
             
             if (i === 0) index = a;
-            else if (index === 1) index = b;
+            else if (i === 1) index = b;
             else index = c;
             
             if (parseInt(index) === 0 || parseInt(index) === 4 || parseInt(index) === 8 || parseInt(index) === 12) {
