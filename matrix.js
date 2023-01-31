@@ -107,7 +107,7 @@ function check(){
                 c = Math.floor(Math.random() * 6 + 9),
                 d = Math.floor(Math.random() * 4);
                
-            if (d == a) d++;
+            if (d == a) d += 1;
             if (i == 0) index = a;
             else if (i == 1) index = b;
             else if (i == 2) index = c;
