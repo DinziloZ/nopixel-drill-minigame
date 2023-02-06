@@ -99,20 +99,32 @@ function check(){
 
     if (randomcheck === false) {
         // The higher value, the more difficult.
-        var difficult = 4;
+        var difficult = 5;
         for (var i = 0; i < difficult; i++) {
             let 
                 a = Math.floor(Math.random() * 4),
                 b = Math.floor(Math.random() * 3 + 5),
-                c = Math.floor(Math.random() * 6 + 9),
-                d = Math.floor(Math.random() * 4);
+                c = Math.floor(Math.random() * 4 + 11),
+                d = a++; e = b++;
                
-            if (d == a) d += 1;
-            if (i == 0) index = a;
-            else if (i == 1) index = b;
-            else if (i == 2) index = c;
-            else index = d;
-            
+           
+            switch (i) {
+                case 0:
+                    index = a;
+                    break;
+                case 1:
+                    index = b;
+                    break;
+                case 2:
+                    index = c;
+                    break;
+                case 3:
+                    index = d;
+                    break;
+                case 4:
+                    index = e;
+                    
+            }
             if (parseInt(index) === 0 || parseInt(index) === 4 || parseInt(index) === 8 || parseInt(index) === 12) {
                 if (parseInt(index) + 1 > -1 && parseInt(index) + 1 < 16) {if (itemList[parseInt(index) + 1].classList.value === "group good") itemList[parseInt(index) + 1].classList.remove('good'); else itemList[parseInt(index) + 1].classList.add('good')}
                 if (parseInt(index) + 4 > -1 && parseInt(index) + 4 < 16) {if (itemList[parseInt(index) + 4].classList.value === "group good") itemList[parseInt(index) + 4].classList.remove('good'); else itemList[parseInt(index) + 4].classList.add('good')}
